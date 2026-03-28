@@ -1,3 +1,10 @@
+/* RESET + BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: system-ui, -apple-system, sans-serif;
   background: white;
@@ -6,11 +13,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
+  justify-content: flex-start; /* better for more content */
+  padding: 3rem 2rem 2rem;
 }
 
 /* HERO / WELCOME */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -20,7 +32,7 @@ body {
 #motivationalQuote {
   font-size: 1.25rem;
   font-weight: 500;
-  color: #555;
+  color: rgba(126, 8, 42, 0.7); /* softer red for readability */
   margin-bottom: 2rem;
 }
 
@@ -36,13 +48,14 @@ body {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .quick-link {
   border: 1px solid #7e082a;
   background: white;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   color: #7e082a;
   font-weight: 600;
@@ -53,4 +66,42 @@ body {
   background: #7e082a;
   color: white;
   transform: translateY(-2px);
+}
+
+/* OPTIONAL NAVBAR (if you want same style as buttons) */
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  border-bottom: 1px solid #7e082a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.navbar .right {
+  margin-left: auto;
+}
+
+.navbar li a {
+  display: block;
+  color: #7e082a;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.navbar li a:hover {
+  background: #7e082a;
+  color: white;
+}
+
+.navbar li a.active {
+  background: #7e082a;
+  color: white;
 }
