@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 2rem;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #860038;
+  font-weight: 600;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #860038;
+  padding-bottom: 0.2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #860038;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.container {
+  width: min(94vw, 1400px);
+  margin: 0 auto 3rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.calendar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.calendar-top h2 {
+  font-family: "Playfair Display", serif;
+  color: #860038;
+  font-size: 2rem;
+}
+
+button {
+  background: #860038;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #67002b;
+}
+
+.month-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.9rem;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: 700;
+  color: #860038;
+  padding: 0.5rem 0;
+}
+
+.calendar-day {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  min-height: 140px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.date-number {
+  font-weight: 700;
+  color: #333;
+}
+
+.task-pill {
+  background: #860038;
+  color: white;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  width: min(92vw, 420px);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: #860038;
+  font-family: "Playfair Display", serif;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 0.9rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .month-calendar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .month-calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calendar-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
