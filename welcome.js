@@ -32,3 +32,5 @@ function showRandomQuote() {
 
 // Run when page loads
 showRandomQuote();
+
+<button onclick="showRandomQuote()">New Quote</button>
