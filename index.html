@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Calm Study Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>AI Calm Study Dashboard</h1>
+    <p>Upload your class notes, get a calm summary, test yourself, and plan what to study next.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Upload Notes</h2>
+      <input type="file" id="noteUpload" accept="image/*" />
+      <button id="generateBtn">Generate Dashboard</button>
+    </section>
+
+    <section class="card hidden" id="summarySection">
+      <h2>AI Summary</h2>
+      <ul id="summaryList">
+        <li>Main topic identified from your notes</li>
+        <li>Key concept 1</li>
+        <li>Key concept 2</li>
+        <li>Review this topic again tomorrow</li>
+      </ul>
+    </section>
+
+    <section class="card hidden" id="dashboardSection">
+      <h2>Your Dashboard</h2>
+      <div class="dashboard-grid">
+        <div class="mini-card">
+          <h3>Top Priorities</h3>
+          <p>Review key ideas</p>
+          <p>Take the quick quiz</p>
+          <p>Revisit weak topics</p>
+        </div>
+
+        <div class="mini-card">
+          <h3>Quick Quiz</h3>
+          <button id="startQuizBtn">Start Quiz</button>
+        </div>
+
+        <div class="mini-card">
+          <h3>Motivation</h3>
+          <p>You do not need to do everything at once.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card hidden" id="quizSection">
+      <h2>Quick Quiz</h2>
+      <p id="questionText">What was the main idea in your uploaded notes?</p>
+      <div class="quiz-buttons">
+        <button class="answerBtn">Option A</button>
+        <button class="answerBtn">Option B</button>
+        <button class="answerBtn">Option C</button>
+      </div>
+      <p id="quizResult"></p>
+    </section>
+
+    <section class="card hidden" id="scheduleSection">
+      <h2>Suggested Schedule</h2>
+      <div class="schedule-box">
+        <p><strong>Tomorrow, 3:30 PM</strong> — Review the missed concepts</p>
+        <p><strong>Thursday, 5:00 PM</strong> — Take a quick follow-up quiz</p>
+        <p><strong>Reminder:</strong> Take a short break before your next session.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
