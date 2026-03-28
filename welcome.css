@@ -1,0 +1,49 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #f6f0ff 0%, #fcf8ff 45%, #f9f1ff 100%);
+  color: #342654;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: #6b46d9;
+  margin-bottom: 0.5rem;
+}
+
+#motivationalQuote {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #5a3fa0;
+  margin-bottom: 2rem;
+}
+
+/* QUICK LINKS */
+.quick-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quick-link {
+  background: linear-gradient(135deg, #c7afff, #eadfff);
+  padding: 0.8rem 1.2rem;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #37245f;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(130, 91, 230, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quick-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(130, 91, 230, 0.22);
+}
