@@ -16,15 +16,73 @@
   <main class="container">
     <main class="container">
   <section class="card">
-    <h2>My Schedule</h2>
-    <div class="schedule-box">
-      <p><strong>9:00 AM</strong> — Calculus Lecture</p>
-      <p><strong>11:00 AM</strong> — Work on Chemistry Notes</p>
-      <p><strong>1:30 PM</strong> — Lunch Break</p>
-      <p><strong>3:30 PM</strong> — Review Quiz Mistakes</p>
-      <p><strong>6:00 PM</strong> — Study Session</p>
+  <div class="calendar-header">
+    <h2>My Weekly Planner</h2>
+    <button id="addTaskBtn">+ Add Task</button>
+  </div>
+
+  <div class="calendar-grid">
+    <div class="day-column">
+      <h3>Monday</h3>
+      <div class="task" data-day="monday">
+        <strong>9:00 AM</strong>
+        <p>Calculus Lecture</p>
+      </div>
+      <div class="task" data-day="monday">
+        <strong>3:30 PM</strong>
+        <p>Review Quiz Mistakes</p>
+      </div>
     </div>
-  </section>
+
+    <div class="day-column">
+      <h3>Tuesday</h3>
+      <div class="task" data-day="tuesday">
+        <strong>11:00 AM</strong>
+        <p>Work on Chemistry Notes</p>
+      </div>
+    </div>
+
+    <div class="day-column">
+      <h3>Wednesday</h3>
+      <div class="task" data-day="wednesday">
+        <strong>1:30 PM</strong>
+        <p>Lunch Break</p>
+      </div>
+    </div>
+
+    <div class="day-column">
+      <h3>Thursday</h3>
+      <div class="task" data-day="thursday">
+        <strong>5:00 PM</strong>
+        <p>Biology Study Session</p>
+      </div>
+    </div>
+
+    <div class="day-column">
+      <h3>Friday</h3>
+      <div class="task" data-day="friday">
+        <strong>10:00 AM</strong>
+        <p>Quiz Review</p>
+      </div>
+    </div>
+
+    <div class="day-column">
+      <h3>Saturday</h3>
+      <div class="task" data-day="saturday">
+        <strong>2:00 PM</strong>
+        <p>Catch Up + Notes Upload</p>
+      </div>
+    </div>
+
+    <div class="day-column">
+      <h3>Sunday</h3>
+      <div class="task" data-day="sunday">
+        <strong>6:00 PM</strong>
+        <p>Plan Next Week</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section class="card">
     <h2>Today’s Focus</h2>
@@ -110,5 +168,32 @@
   </main>
 
   <script src="script.js"></script>
+  <div class="modal hidden" id="taskModal">
+  <div class="modal-content">
+    <h2>Add a Task</h2>
+
+    <label for="taskDay">Day</label>
+    <select id="taskDay">
+      <option value="monday">Monday</option>
+      <option value="tuesday">Tuesday</option>
+      <option value="wednesday">Wednesday</option>
+      <option value="thursday">Thursday</option>
+      <option value="friday">Friday</option>
+      <option value="saturday">Saturday</option>
+      <option value="sunday">Sunday</option>
+    </select>
+
+    <label for="taskTime">Time</label>
+    <input type="text" id="taskTime" placeholder="ex: 4:00 PM" />
+
+    <label for="taskText">Task</label>
+    <input type="text" id="taskText" placeholder="ex: Review chemistry chapter" />
+
+    <div class="modal-buttons">
+      <button id="saveTaskBtn">Save Task</button>
+      <button id="closeModalBtn" type="button">Cancel</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
