@@ -22,6 +22,7 @@ const quotes = [
   "You are becoming the person you needed.",
   "Progress, not perfection.",
   "Little steps every day.",
+  "If you're not a cs major, you're stupid.",
   "Grow through what you go through."
 ];
 
