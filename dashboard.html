@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTdF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI LADA Study Dashboard</title>
 
@@ -11,26 +11,86 @@
   />
   <link rel="stylesheet" href="dashboard.css" />
 </head>
-
-<nav>
-  <ul class="navbar">
-    <li><a href="dashboard.html" class="active">Dashboard</a></li>
-    <li><a href="#calendar">Calendar</a></li>
-    <li><a href="#notes">Notes</a></li>
-    <li><a href="#planning">Planning</a></li>
-    <li><a href="#settings">Settings</a></li>
-    <li class="right"><a href="#profile">Profile</a></li>
-  </ul>
-</nav>
-
 <body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="welcome.html">Home</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#planning">Planning</a></li>
+      <li><a href="#settings">Settings</a></li>
+    </ul>
+  </nav>
+
   <header class="hero">
     <h1>AI LADA Study Dashboard</h1>
     <p>
       See your schedule, stay organized, upload notes, and get calm AI-powered study help.
     </p>
   </header>
-  
+
+  <main class="container">
+    <section class="dashboard-top-grid">
+      <div class="card">
+        <h2>This Week</h2>
+        <div class="week-calendar">
+          <div class="week-day">
+            <h3>Mon</h3>
+            <p>Calc HW</p>
+            <p>Study 6 PM</p>
+          </div>
+
+          <div class="week-day">
+            <h3>Tue</h3>
+            <p>Bio review</p>
+            <p>Quiz prep</p>
+          </div>
+
+          <div class="week-day">
+            <h3>Wed</h3>
+            <p>Chem notes</p>
+            <p>Class 2 PM</p>
+          </div>
+
+          <div class="week-day">
+            <h3>Thu</h3>
+            <p>Upload notes</p>
+            <p>Study block</p>
+          </div>
+
+          <div class="week-day">
+            <h3>Fri</h3>
+            <p>Calc quiz</p>
+            <p>Review mistakes</p>
+          </div>
+
+          <div class="week-day">
+            <h3>Sat</h3>
+            <p>Catch up</p>
+            <p>Read chapter</p>
+          </div>
+
+          <div class="week-day">
+            <h3>Sun</h3>
+            <p>Plan next week</p>
+            <p>Rest</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pomodoro-card">
+        <h2>Pomodoro Timer</h2>
+        <div class="timer-display" id="timerDisplay">25:00</div>
+        <div class="timer-buttons">
+          <button id="startTimerBtn" type="button">Start</button>
+          <button id="pauseTimerBtn" type="button">Pause</button>
+          <button id="resetTimerBtn" type="button">Reset</button>
+        </div>
+        <p class="timer-note">Focus for 25 minutes, then take a short break.</p>
+      </div>
+    </section>
+
     <section class="card">
       <h2>Today’s Focus</h2>
       <div class="dashboard-grid">
@@ -54,7 +114,7 @@
       </div>
     </section>
 
-    <section class="card">
+    <section class="card" id="notes">
       <h2>Add New Notes</h2>
       <input type="file" id="noteUpload" accept="image/*" />
       <button id="generateBtn" type="button">Generate Summary</button>
@@ -113,59 +173,7 @@
     </section>
   </main>
 
-  <div class="modal hidden" id="taskModal">
-    <div class="modal-content">
-      <h2>Add a Task</h2>
-
-      <label for="taskDate">Date</label>
-      <select id="taskDate">
-        <option value="1">March 1</option>
-        <option value="2">March 2</option>
-        <option value="3">March 3</option>
-        <option value="4">March 4</option>
-        <option value="5">March 5</option>
-        <option value="6">March 6</option>
-        <option value="7">March 7</option>
-        <option value="8">March 8</option>
-        <option value="9">March 9</option>
-        <option value="10">March 10</option>
-        <option value="11">March 11</option>
-        <option value="12">March 12</option>
-        <option value="13">March 13</option>
-        <option value="14">March 14</option>
-        <option value="15">March 15</option>
-        <option value="16">March 16</option>
-        <option value="17">March 17</option>
-        <option value="18">March 18</option>
-        <option value="19">March 19</option>
-        <option value="20">March 20</option>
-        <option value="21">March 21</option>
-        <option value="22">March 22</option>
-        <option value="23">March 23</option>
-        <option value="24">March 24</option>
-        <option value="25">March 25</option>
-        <option value="26">March 26</option>
-        <option value="27">March 27</option>
-        <option value="28">March 28</option>
-        <option value="29">March 29</option>
-        <option value="30">March 30</option>
-        <option value="31">March 31</option>
-      </select>
-
-      <label for="taskText">Task</label>
-      <input
-        type="text"
-        id="taskText"
-        placeholder="ex: Study chemistry chapter"
-      />
-
-      <div class="modal-buttons">
-        <button id="saveTaskBtn" type="button">Save Task</button>
-        <button id="closeModalBtn" type="button">Cancel</button>
-      </div>
-    </div>
-  </div>
-
   <script src="script.js"></script>
+  
 </body>
 </html>
