@@ -14,63 +14,99 @@
   </header>
 
   <main class="container">
-    <section class="card">
-      <h2>Upload Notes</h2>
-      <input type="file" id="noteUpload" accept="image/*" />
-      <button id="generateBtn">Generate Dashboard</button>
-    </section>
+    <main class="container">
+  <section class="card">
+    <h2>My Schedule</h2>
+    <div class="schedule-box">
+      <p><strong>9:00 AM</strong> — Calculus Lecture</p>
+      <p><strong>11:00 AM</strong> — Work on Chemistry Notes</p>
+      <p><strong>1:30 PM</strong> — Lunch Break</p>
+      <p><strong>3:30 PM</strong> — Review Quiz Mistakes</p>
+      <p><strong>6:00 PM</strong> — Study Session</p>
+    </div>
+  </section>
 
-    <section class="card hidden" id="summarySection">
-      <h2>AI Summary</h2>
-      <ul id="summaryList">
-        <li>Main topic identified from your notes</li>
-        <li>Key concept 1</li>
-        <li>Key concept 2</li>
-        <li>Review this topic again tomorrow</li>
-      </ul>
-    </section>
-
-    <section class="card hidden" id="dashboardSection">
-      <h2>Your Dashboard</h2>
-      <div class="dashboard-grid">
-        <div class="mini-card">
-          <h3>Top Priorities</h3>
-          <p>Review key ideas</p>
-          <p>Take the quick quiz</p>
-          <p>Revisit weak topics</p>
-        </div>
-
-        <div class="mini-card">
-          <h3>Quick Quiz</h3>
-          <button id="startQuizBtn">Start Quiz</button>
-        </div>
-
-        <div class="mini-card">
-          <h3>Motivation</h3>
-          <p>You do not need to do everything at once.</p>
-        </div>
+  <section class="card">
+    <h2>Today’s Focus</h2>
+    <div class="dashboard-grid">
+      <div class="mini-card">
+        <h3>Top Priorities</h3>
+        <p>Finish math homework</p>
+        <p>Review biology notes</p>
+        <p>Prepare for tomorrow’s quiz</p>
       </div>
-    </section>
 
-    <section class="card hidden" id="quizSection">
-      <h2>Quick Quiz</h2>
-      <p id="questionText">What was the main idea in your uploaded notes?</p>
-      <div class="quiz-buttons">
-        <button class="answerBtn">Option A</button>
-        <button class="answerBtn">Option B</button>
-        <button class="answerBtn">Option C</button>
+      <div class="mini-card">
+        <h3>Suggested Review</h3>
+        <p>You got medium confidence on your last quiz.</p>
+        <p>Recommended review time: <strong>Tomorrow at 3:30 PM</strong></p>
       </div>
-      <p id="quizResult"></p>
-    </section>
 
-    <section class="card hidden" id="scheduleSection">
-      <h2>Suggested Schedule</h2>
-      <div class="schedule-box">
-        <p><strong>Tomorrow, 3:30 PM</strong> — Review the missed concepts</p>
-        <p><strong>Thursday, 5:00 PM</strong> — Take a quick follow-up quiz</p>
-        <p><strong>Reminder:</strong> Take a short break before your next session.</p>
+      <div class="mini-card">
+        <h3>Motivation</h3>
+        <p>Small progress still counts.</p>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Add New Notes</h2>
+    <input type="file" id="noteUpload" accept="image/*" />
+    <button id="generateBtn">Generate Summary</button>
+  </section>
+
+  <section class="card hidden" id="summarySection">
+    <h2>AI Summary</h2>
+    <ul id="summaryList">
+      <li>Main topic identified from your notes</li>
+      <li>Key concept 1</li>
+      <li>Key concept 2</li>
+      <li>Review this topic again tomorrow</li>
+    </ul>
+  </section>
+
+  <section class="card hidden" id="dashboardSection">
+    <h2>Study Dashboard Update</h2>
+    <div class="dashboard-grid">
+      <div class="mini-card">
+        <h3>New Priorities</h3>
+        <p>Review uploaded notes</p>
+        <p>Take the quick quiz</p>
+        <p>Revisit weak areas</p>
+      </div>
+
+      <div class="mini-card">
+        <h3>Quick Quiz</h3>
+        <button id="startQuizBtn">Start Quiz</button>
+      </div>
+
+      <div class="mini-card">
+        <h3>Next Step</h3>
+        <p>Your study plan updates automatically after the quiz.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card hidden" id="quizSection">
+    <h2>Quick Quiz</h2>
+    <p id="questionText">What was the main idea in your uploaded notes?</p>
+    <div class="quiz-buttons">
+      <button class="answerBtn">Option A</button>
+      <button class="answerBtn">Option B</button>
+      <button class="answerBtn">Option C</button>
+    </div>
+    <p id="quizResult"></p>
+  </section>
+
+  <section class="card hidden" id="scheduleSection">
+    <h2>Suggested Schedule Update</h2>
+    <div class="schedule-box">
+      <p><strong>Tomorrow, 3:30 PM</strong> — Review the missed concepts</p>
+      <p><strong>Thursday, 5:00 PM</strong> — Take a quick follow-up quiz</p>
+      <p><strong>Reminder:</strong> Take a short break before your next session.</p>
+    </div>
+  </section>
+</main>
   </main>
 
   <script src="script.js"></script>
