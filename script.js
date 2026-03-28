@@ -11,6 +11,9 @@ const quizResult = document.getElementById("quizResult");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskModal = document.getElementById("taskModal");
 const closeModalBtn = document.getElementById("closeModalBtn");
+closeModalBtn?.addEventListener("click", () => {
+  taskModal.classList.add("hidden");
+});
 const saveTaskBtn = document.getElementById("saveTaskBtn");
 const taskDate = document.getElementById("taskDate");
 const taskText = document.getElementById("taskText");
