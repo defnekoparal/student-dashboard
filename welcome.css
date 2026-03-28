@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* better for more content */
+  justify-content: flex-start;
   padding: 3rem 2rem 2rem;
 }
 
@@ -68,7 +68,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* OPTIONAL NAVBAR (if you want same style as buttons) */
+/* OPTIONAL NAVBAR */
 .navbar {
   list-style: none;
   display: flex;
