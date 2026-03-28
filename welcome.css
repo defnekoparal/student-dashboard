@@ -1,7 +1,7 @@
 body {
   font-family: system-ui, -apple-system, sans-serif;
   background: white;
-  color: #860038;
+  color: #7e082a;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -27,7 +27,7 @@ body {
 .quote-section {
   margin-bottom: 1.5rem;
   padding-bottom: 1.2rem;
-  border-bottom: 1px solid rgba(52, 38, 84, 0.15);
+  border-bottom: 1px solid rgba(126, 8, 42, 0.2);
 }
 
 /* QUICK LINKS */
@@ -39,18 +39,18 @@ body {
 }
 
 .quick-link {
-  border: 1px solid black;
+  border: 1px solid #7e082a;
   background: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   text-decoration: none;
-  color: black;
+  color: #7e082a;
   font-weight: 600;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .quick-link:hover {
-  background: black;
+  background: #7e082a;
   color: white;
   transform: translateY(-2px);
 }
