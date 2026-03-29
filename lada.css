@@ -116,6 +116,17 @@ body {
   border-radius: 10px;
 }
 
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+}
+
+.demo-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Row of 3 */
 .row {
   display: flex;
