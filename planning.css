@@ -18,6 +18,10 @@ body {
   border-bottom: 1px solid #e9cfd8;
 }
 
+.navbar li.logout {
+  margin-left: auto; /* pushes this item to the right */
+}
+
 .navbar a {
   display: block;
   padding: 1rem 1.3rem;
