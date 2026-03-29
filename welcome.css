@@ -90,10 +90,11 @@ button:hover {
 .nav-buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* center buttons horizontally */
   gap: 15px;
-  padding-top: 20px;
-  margin-top: 20px;
-  border-top: 2px solid #860038; /* maroon color for the border */
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #860038; /* thinner maroon divider */
 }
 
 .nav-btn {
