@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #fff8fa 0%, #fffdfd 100%);
+  font-family: "Inter", sans-serif;
+  color: #3b1f2b;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #860038;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fdf0f5;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #a0044f;
+  color: #fff;
+}
+
+.nav-links li a.active {
+  background-color: #b10a5f;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-family: "Playfair Display", serif;
+  color: #860038;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-weight: 400;
+  color: #a14d67;
+  font-size: 1.2rem;
+}
+
+/* Settings Section */
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.settings-card {
+  background: linear-gradient(180deg, #fff8fa 0%, #ffffff 100%);
+  border: 1px solid #efcdd8;
+  border-radius: 20px;
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 6px 16px rgba(134, 0, 56, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings-card h2 {
+  font-family: "Playfair Display", serif;
+  color: #860038;
+  margin-bottom: 10px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.setting-item label {
+  font-weight: 500;
+  color: #6c2e43;
+}
+
+.setting-item input,
+.setting-item select {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #efcdd8;
+  font-size: 14px;
+  flex: 1;
+  max-width: 250px;
+}
+
+/* Buttons */
+.settings-card button {
+  background: #860038;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  align-self: flex-start;
+}
+
+.settings-card button:hover {
+  background: #b10a5f;
+}
+
+.logout-card {
+  align-items: center;
+}
+
+.logout-card button {
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .setting-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
