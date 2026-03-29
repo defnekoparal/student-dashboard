@@ -12,27 +12,35 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* Navbar */
+/* Navbar for LADA - inverted colors */
 .navbar {
-  background: #fffafa;
-  border-bottom: 1px solid #e9cfd8;
-  padding: 15px 20px;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  background-color: #800000; /* maroon background */
+  padding: 15px 30px;
+  margin: 0;
 }
 
-.nav-links a {
-  color: #860038;
-  margin-left: 15px;
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s ease;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-.nav-links a:hover {
-  background: #f9e8ee;
-  padding: 6px 10px;
-  border-radius: 8px;
+.navbar a:hover,
+.navbar a.active {
+  background-color: #b22222; /* slightly lighter maroon on hover/active */
 }
 
 /* Header */
