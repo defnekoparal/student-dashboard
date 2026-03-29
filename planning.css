@@ -30,6 +30,10 @@ body {
   font-weight: 600;
 }
 
+.navbar a:hover {
+  background: #f9e8ee;
+}
+
 .navbar a.active {
   background: #860038;
   color: white;
