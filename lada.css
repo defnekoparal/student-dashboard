@@ -16,31 +16,38 @@ body {
 .navbar {
   list-style: none;
   display: flex;
+  gap: 0;
+  padding: 0;
+  background-color: #860038; /* maroon background */
+  border-bottom: 1px solid #b22222; /* darker maroon border */
   justify-content: flex-end;
   align-items: center;
-  gap: 25px;
-  background-color: #860038; /* maroon background */
-  padding: 15px 30px;
   margin: 0;
 }
 
 .navbar li {
-  display: inline;
+  display: inline-block;
 }
 
 .navbar a {
-  color: white;
+  display: block;
+  padding: 1rem 1.3rem;
   text-decoration: none;
-  font-weight: 500;
+  color: white; /* links white by default */
+  font-weight: 600;
   font-family: 'Inter', sans-serif;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  border-radius: 0; /* default no rounding */
+  transition: 0.2s ease;
 }
 
-.navbar a:hover,
+.navbar a:hover {
+  background-color: #b22222; /* slightly lighter maroon on hover */
+}
+
 .navbar a.active {
-  background-color: #b22222; /* slightly lighter maroon on hover/active */
+  background-color: #b22222; /* active link background */
+  color: white;
+  border-radius: 0 0 12px 12px; /* rounded bottom corners for active */
 }
 
 /* Header */
