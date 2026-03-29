@@ -15,7 +15,7 @@
       <li><a href="welcome.html">Home</a></li>
       <li><a href="dashboard.html">Dashboard</a></li>
       <li><a href="calendar.html">Calendar</a></li>
-      <li><a href="https://74a77ef1-efae-4ff1-a48f-8236860fc5ba-00-33p5gtno19pp0.picard.replit.dev/">Notes</a></li>
+      <li><a href="#">Notes</a></li>
       <li><a href="planning.html" class="active">Planning</a></li>
       <li><a href="#">Settings</a></li>
     </ul>
@@ -23,27 +23,29 @@
 
   <header class="hero">
     <h1>Energy-Based Planning</h1>
-    <p>Work with your energy, not against it.</p>
+    <p>Plan based on how you feel — not just time.</p>
   </header>
 
   <main class="container">
 
     <!-- ENERGY SELECT -->
     <section class="card">
-      <h2>How are you feeling?</h2>
+      <h2>How are you feeling right now?</h2>
 
       <div class="energy-options">
         <button class="energy-btn" data-energy="tired">😴 Tired</button>
         <button class="energy-btn" data-energy="okay">😐 Okay</button>
         <button class="energy-btn" data-energy="focused">⚡ Focused</button>
       </div>
+
+      <p id="energyMessage" class="energy-message"></p>
     </section>
 
-    <!-- TASK OUTPUT -->
+    <!-- TASKS -->
     <section class="card">
-      <h2>Suggested Tasks</h2>
+      <h2>Your Suggested Plan</h2>
       <div id="taskContainer" class="task-container">
-        <p>Select your energy level to see tasks.</p>
+        <p class="placeholder">Select your energy level to begin.</p>
       </div>
     </section>
 
