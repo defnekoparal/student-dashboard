@@ -25,6 +25,7 @@ const quotes = [
   "You are becoming the person you needed.",
   "Progress, not perfection.",
   "Little steps every day.",
+  "If you're not a cs major, you're stupid.",
   "Grow through what you go through."
 ];
 
@@ -122,6 +123,19 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+function makeTaskDeletable(taskElement) {
+  taskElement.addEventListener("click", () => {
+    const confirmDelete = confirm(`Delete "${taskElement.textContent}"?`);
+    if (confirmDelete) {
+      taskElement.remove();
+    }
+  });
+}
+
+document.querySelectorAll(".task-pill").forEach((task) => {
+  makeTaskDeletable(task);
+});
+
 if (saveTaskBtn) {
   saveTaskBtn.addEventListener("click", () => {
     if (!taskDate || !taskText || !taskModal) return;
@@ -147,12 +161,20 @@ if (saveTaskBtn) {
     newTask.className = "task-pill";
     newTask.textContent = newTaskText;
 
+    makeTaskDeletable(newTask);
+
     targetDay.appendChild(newTask);
 
     taskText.value = "";
     taskModal.classList.add("hidden");
   });
-  const timerDisplay = document.getElementById("timerDisplay");
+}
+
+
+// =========================
+// POMODORO TIMER
+// =========================
+const timerDisplay = document.getElementById("timerDisplay");
 const startTimerBtn = document.getElementById("startTimerBtn");
 const pauseTimerBtn = document.getElementById("pauseTimerBtn");
 const resetTimerBtn = document.getElementById("resetTimerBtn");
@@ -204,4 +226,3 @@ if (resetTimerBtn) {
 }
 
 updateTimerDisplay();
-}
