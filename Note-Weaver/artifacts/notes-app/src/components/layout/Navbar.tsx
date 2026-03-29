@@ -23,6 +23,12 @@ export function Navbar() {
             🎯 <span className="hidden sm:inline">Dashboard</span>
           </a>
           <a
+            href="https://defnekoparal.github.io/lada-student-dashboard/welcome.html"
+            className="flex items-center gap-2 px-3 py-2 sm:px-4 rounded-lg text-sm font-medium transition-colors text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+          >
+           <span className="hidden sm:inline">Home</span>
+          </a>
+          <a
             href="https://defnekoparal.github.io/lada-student-dashboard/calendar.html"
             className="flex items-center gap-2 px-3 py-2 sm:px-4 rounded-lg text-sm font-medium transition-colors text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
           >
