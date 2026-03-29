@@ -28,11 +28,14 @@ export function Navbar() {
           <Link href="/" className={cn("...", isHome ? "bg-secondary text-secondary-foreground" : "...")}>
             📝 <span className="hidden sm:inline">Notes</span>
           </Link>
-          <a href="#">
+          <a href="https://defnekoparal.github.io/lada-student-dashboard/planning.html" className="...">
             📌 <span className="hidden sm:inline">Planning</span>
           </a>
-          <a href="#">
+          <a href="https://defnekoparal.github.io/lada-student-dashboard/settings.html" className="...">
             ⚙️ <span className="hidden sm:inline">Settings</span>
+          </a>
+            <a href="https://defnekoparal.github.io/lada-student-dashboard/login.html" className="...">
+            🚫 <span className="hidden sm:inline">Log out</span>
           </a>
         </nav>
       </div>
