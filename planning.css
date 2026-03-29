@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #fff8fa 0%, #fffdfd 100%);
+  color: #3b1f2b;
+  font-family: "Inter", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  list-style: none;
+  display: flex;
+  background: #fffafa;
+  border-bottom: 1px solid #e9cfd8;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem 1.3rem;
+  text-decoration: none;
+  color: #860038;
+  font-weight: 600;
+}
+
+.navbar a.active {
+  background: #860038;
+  color: white;
+  border-radius: 0 0 12px 12px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2.5rem;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #860038;
+}
+
+.hero p {
+  color: #a14d67;
+}
+
+/* LAYOUT */
+.container {
+  width: min(95vw, 1200px);
+  margin: 0 auto 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e6c8d2;
+  border-radius: 24px;
+  padding: 1.6rem;
+  box-shadow: 0 10px 30px rgba(134, 0, 56, 0.07);
+}
+
+.card h2 {
+  color: #860038;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+/* ENERGY BUTTONS */
+.energy-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.energy-btn {
+  background: linear-gradient(180deg, #fff7fa 0%, #ffeef3 100%);
+  border: 1px solid #dba7b8;
+  color: #860038;
+  padding: 0.8rem 1.4rem;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.energy-btn:hover {
+  background: #860038;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.energy-btn.active {
+  background: #860038;
+  color: white;
+}
+
+/* TASKS */
+.task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.task {
+  background: linear-gradient(180deg, #fff8fa 0%, #ffffff 100%);
+  border: 1px solid #efcdd8;
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  color: #5a3342;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .energy-options {
+    flex-direction: column;
+  }
+}
