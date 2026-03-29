@@ -13,6 +13,18 @@ body {
 }
 
 /* Navbar for LADA */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+}
 .navbar {
   list-style: none;
   display: flex;
