@@ -1,6 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Dashboard - LADA</title>
+  <link rel="stylesheet" href="lada.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="#">Calendar</a>
+    <a href="#">Notes</a>
+    <a href="#">Planning</a>
+    <a href="settings.html">Settings</a>
+  </div>
+  <div class="nav-right">
+    <a href="#">Log Out</a>
+  </div>
+</nav>
+
+<!-- Title -->
+<header class="hero">
+  <h1>AI LADA Study Dashboard</h1>
+  <p>See your schedule, stay organized, and get calm AI-powered study help.</p>
+</header>
+
+<!-- Main Content -->
+<div class="dashboard-container">
+
+  <!-- This Week -->
+  <section class="card">
+    <h2>This Week</h2>
+    <div class="week-grid">
+      <div class="day">Mon<br>Calc HW<br>Study 6 PM</div>
+      <div class="day">Tue<br>Bio review<br>Quiz prep</div>
+      <div class="day">Wed<br>Chem notes<br>Class 2 PM</div>
+      <div class="day">Thu<br>Upload notes<br>Study block</div>
+      <div class="day">Fri<br>Calc quiz<br>Review mistakes</div>
+      <div class="day">Sat<br>Catch up<br>Read chapter</div>
+      <div class="day">Sun<br>Plan next week<br>Rest</div>
+    </div>
+  </section>
+
+  <!-- Pomodoro Timer -->
+  <section class="card timer-card">
+    <h2>Pomodoro Timer</h2>
+
+    <!-- IMPORTANT: this ID is what JS uses -->
+    <div id="timer">25:00</div>
+
+    <div class="timer-buttons">
+      <!-- IMPORTANT: these IDs connect to JS -->
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <p>Focus for 25 minutes, then take a break.</p>
+  </section>
+
+</div>
+
+<!-- Reset Button -->
+<div class="reset-container">
+  <!-- IMPORTANT: ID for JS -->
+  <button id="resetDayBtn">Reset My Day</button>
+</div>
+
+<!-- Today's Focus -->
+<section class="card">
+  <h2>Today's Focus</h2>
+
+  <div class="focus-grid">
+
+    <div class="focus-box">
+      <h3>Top Priorities</h3>
+      <ul>
+        <li>Finish math homework</li>
+        <li>Review biology notes</li>
+        <li>Prepare for tomorrow’s quiz</li>
+      </ul>
+    </div>
+
+    <div class="focus-box">
+      <h3>Suggested Review</h3>
+      <p>You got medium confidence on your last quiz.</p>
+      <p><strong>Recommended review:</strong> Tomorrow at 3:30 PM</p>
+    </div>
+
+    <div class="focus-box">
+      <h3>AI Suggestion</h3>
+      <p>Light workload detected — great time to organize your notes.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 🔥 THIS LINE IS WHAT YOU WERE MISSING -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+/* 
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI LADA Study Dashboard</title>
@@ -166,3 +274,4 @@
 
 </body>
 </html>
+*/
