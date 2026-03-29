@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - LADA</title>
   <link rel="stylesheet" href="lada.css">
 </head>
 <body>
 
+  <!-- Navbar -->
   <div class="navbar">
     <h1>LADA</h1>
     <div class="nav-links">
@@ -16,15 +18,24 @@
     </div>
   </div>
 
+  <!-- Header -->
   <div class="header">
     <h1>Login</h1>
   </div>
 
+  <!-- Login Form -->
   <div style="text-align:center; margin-top:20px;">
-    <input type="text" placeholder="Username"><br><br>
-    <input type="password" placeholder="Password"><br><br>
-    <button>Login</button>
+    <input type="text" placeholder="Username" id="username"><br><br>
+    <input type="password" placeholder="Password" id="password"><br><br>
+    <button id="loginBtn">Login</button>
   </div>
+
+  <!-- Redirect Script -->
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', function() {
+      window.location.href = "welcome.html";
+    });
+  </script>
 
 </body>
 </html>
