@@ -7,47 +7,52 @@
 
 /* Body */
 body {
-  background: linear-gradient(135deg, #f6f0ff 0%, #fcf8ff 45%, #f9f1ff 100%);
-  color: #342654;
-  font-family: "Playfair Display", serif;
+  background: linear-gradient(180deg, #fff8fa 0%, #fffdfd 100%);
+  color: #3b1f2b;
+  font-family: "Inter", sans-serif;
 }
 
 /* Navbar */
 .navbar {
-  background: #2c3e50;
-  color: white;
+  background: #fffafa;
+  border-bottom: 1px solid #e9cfd8;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .nav-links a {
-  color: white;
+  color: #860038;
   margin-left: 15px;
   text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  background: #f9e8ee;
+  padding: 6px 10px;
+  border-radius: 8px;
 }
 
 /* Header */
 .header {
   text-align: center;
   padding: 60px 20px;
-  transition: 
-    padding 0.4s ease,
-    transform 0.4s ease;
+  transition: padding 0.4s ease, transform 0.4s ease;
 }
 
 .header h1 {
   font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #860038;
   transition: font-size 0.4s ease;
 }
 
 .header h2 {
   margin-top: 10px;
   font-weight: normal;
+  color: #a14d67;
   transition: opacity 0.3s ease;
 }
 
@@ -77,9 +82,11 @@ body {
 /* Demo box */
 .demo-box {
   width: 60%;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
+  border: 1px solid #e6c8d2;
+  box-shadow: 0 10px 25px rgba(134, 0, 56, 0.06);
   text-align: center;
 }
 
@@ -87,7 +94,7 @@ body {
 .video-container iframe {
   width: 100%;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 /* Row of 3 */
@@ -100,20 +107,23 @@ body {
 /* Cards */
 .card {
   flex: 1;
-  background: white;
+  background: linear-gradient(180deg, #fff8fa 0%, #ffffff 100%);
+  border: 1px solid #efcdd8;
   padding: 25px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(134, 0, 56, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 22px rgba(134, 0, 56, 0.08);
 }
 
 .visual img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-top: 10px;
   object-fit: cover;
 }
@@ -137,9 +147,15 @@ body {
   }
 }
 
+/* TEAM SECTION */
 .team-section {
   text-align: center;
   padding: 50px 20px;
+}
+
+.team-section h2 {
+  font-family: "Playfair Display", serif;
+  color: #860038;
 }
 
 .team-row {
@@ -151,16 +167,18 @@ body {
 }
 
 .profile-card {
-  background: white;
+  background: linear-gradient(180deg, #fff8fa 0%, #ffffff 100%);
+  border: 1px solid #efcdd8;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 18px;
   width: 220px;
+  box-shadow: 0 6px 16px rgba(134, 0, 56, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 14px 26px rgba(134, 0, 56, 0.1);
 }
 
 /* Circular image */
@@ -172,13 +190,15 @@ body {
   margin-bottom: 15px;
 }
 
+/* TEXT */
 .role {
-  font-weight: bold;
-  color: #6c5ce7;
+  font-weight: 600;
+  color: #860038;
   margin: 5px 0;
 }
 
 .fun-fact {
   font-size: 14px;
-  opacity: 0.8;
+  color: #6c2e43;
+  opacity: 0.85;
 }
