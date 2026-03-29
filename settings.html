@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="lada.css">
+  <link rel="stylesheet" href="settings.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
   </nav>
 
   <!-- Settings Header -->
-  <header class="header" id="header">
+  <header class="header">
     <h1>Settings</h1>
     <h2>Customize your experience</h2>
   </header>
@@ -37,37 +37,37 @@
     <div class="settings-card">
       <h2>Account</h2>
       <div class="setting-item">
-        <label>Profile Name:</label>
-        <input type="text" value="RAMHACKER">
+        <label for="profile-name">Profile Name:</label>
+        <input type="text" id="profile-name" value="RAMHACKER">
       </div>
       <div class="setting-item">
-        <label>Email:</label>
-        <input type="email" value="user@example.com">
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="user@example.com">
       </div>
       <div class="setting-item">
-        <label>Password:</label>
-        <input type="password" placeholder="Change password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Change password">
       </div>
-      <button>Update Account</button>
+      <button id="update-account-btn">Update Account</button>
     </div>
 
     <!-- Preferences -->
     <div class="settings-card">
       <h2>Preferences</h2>
       <div class="setting-item">
-        <label>Theme:</label>
-        <select>
+        <label for="theme">Theme:</label>
+        <select id="theme">
           <option>Light</option>
           <option>Dark</option>
         </select>
       </div>
       <div class="setting-item">
         <label>Notifications:</label>
-        <input type="checkbox" checked> Enable notifications
+        <input type="checkbox" id="notifications" checked>
       </div>
       <div class="setting-item">
-        <label>Language:</label>
-        <select>
+        <label for="language">Language:</label>
+        <select id="language">
           <option>English</option>
           <option>Spanish</option>
           <option>French</option>
@@ -79,19 +79,20 @@
     <div class="settings-card">
       <h2>Privacy & Security</h2>
       <div class="setting-item">
-        <button>Export Data</button>
+        <button id="export-data-btn">Export Data</button>
       </div>
       <div class="setting-item">
-        <button>Delete Account</button>
+        <button id="delete-account-btn">Delete Account</button>
       </div>
     </div>
 
     <!-- Log Out -->
     <div class="settings-card logout-card">
-      <button>🚫 Log Out</button>
+      <button id="logout-btn">🚫 Log Out</button>
     </div>
 
   </section>
 
+  <script src="settings.js"></script>
 </body>
 </html>
