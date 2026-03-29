@@ -324,5 +324,6 @@ body {
 }
 
 .login-card button:hover {
-  background: #750031;
+  background: #5a0026;
+  box-shadow: 0 5px 15px rgba(117, 0, 49, 0.4);
 }
