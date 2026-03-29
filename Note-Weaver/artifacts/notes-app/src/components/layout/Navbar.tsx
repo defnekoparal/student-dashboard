@@ -17,13 +17,13 @@ export function Navbar() {
         
         <nav className="flex items-center gap-1 sm:gap-2">
           <a
-            href="dashboard.html"
+            href="https://defnekoparal.github.io/lada-student-dashboard/dashboard.html"
             className="flex items-center gap-2 px-3 py-2 sm:px-4 rounded-lg text-sm font-medium transition-colors text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
           >
             🎯 <span className="hidden sm:inline">Dashboard</span>
           </a>
           <a
-            href="calendar.html"
+            href="https://defnekoparal.github.io/lada-student-dashboard/calendar.html"
             className="flex items-center gap-2 px-3 py-2 sm:px-4 rounded-lg text-sm font-medium transition-colors text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
           >
             📅 <span className="hidden sm:inline">Calendar</span>
