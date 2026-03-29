@@ -19,10 +19,10 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 25px;
-  background-color: #6c1b3f; /* deep maroon background */
+  background-color: #860038; /* main maroon background */
   padding: 15px 30px;
   margin: 0;
-  border-bottom: 2px solid #4f1330; /* subtle darker border */
+  border-bottom: 2px solid #6b002d; /* slightly darker border for depth */
 }
 
 .navbar li {
@@ -40,12 +40,12 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #7e2a4f; /* slightly brighter hover maroon */
+  background-color: #a0044f; /* lighter maroon on hover */
   color: #ffffff;
 }
 
 .navbar a.active {
-  background-color: #9c3b62; /* highlighted active link */
+  background-color: #b10a5f; /* slightly brighter maroon for active link */
   color: #ffffff;
 }
 
