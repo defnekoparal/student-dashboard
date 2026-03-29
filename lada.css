@@ -24,6 +24,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
+  background-color: transparent;
 }
 .navbar {
   list-style: none;
