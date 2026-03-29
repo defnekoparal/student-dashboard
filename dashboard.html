@@ -111,37 +111,35 @@
 
     <!-- TODAY'S FOCUS -->
     <section class="card">
-      <h2>Today’s Focus</h2>
+  <h2>Today’s Focus</h2>
 
-      <div class="dashboard-grid">
+  <!-- USER INPUT -->
+  <div class="mini-card">
+    <h3>Set Your Focus</h3>
+    <input id="focusInput" placeholder="What do you need to focus on today?" />
+    <button id="saveFocusBtn">Save Focus</button>
+  </div>
 
-        <div class="mini-card">
-          <h3>Top Priorities</h3>
-          <textarea id="focusInput" placeholder="Type today's priorities..."></textarea>
-          <button onclick="saveFocus()">Save</button>
-        </div>
-        
-        /* <div class="mini-card">
-          <h3>Top Priorities</h3>
-          <p>Finish math homework</p>
-          <p>Review biology notes</p>
-          <p>Prepare for tomorrow’s quiz</p>
-        </div> */
+  <div class="dashboard-grid">
 
-        <div class="mini-card">
-          <h3>Suggested Review</h3>
-          <p>You got medium confidence on your last quiz.</p>
-          <p><strong>Recommended review:</strong> Tomorrow at 3:30 PM</p>
-        </div>
+    <!-- AUTO TASKS FROM CALENDAR -->
+    <div class="mini-card">
+      <h3>Today's Tasks</h3>
+      <div id="todayTasks">Loading...</div>
+    </div>
 
-        <!-- ✅ AI FEATURE -->
-        <div class="mini-card">
-          <h3>AI Suggestion</h3>
-          <p id="aiSuggestion">Thinking...</p>
-        </div>
+    <div class="mini-card">
+      <h3>Suggested Review</h3>
+      <p id="suggestedReview">Analyzing your workload...</p>
+    </div>
 
-      </div>
-    </section>
+    <div class="mini-card">
+      <h3>AI Suggestion</h3>
+      <p id="aiSuggestion">Thinking...</p>
+    </div>
+
+  </div>
+</section>
 
     <!-- QUIZ SECTION -->
     <section class="card hidden" id="quizSection">
